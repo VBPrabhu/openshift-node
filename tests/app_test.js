@@ -7,8 +7,11 @@ chai.use(chaiHTTP);
 
 reqServer = process.env.HTTP_TEST_SERVER || server
 
+env_ex= process.env.NODE_ENV || "Not working"
+
 describe('Basic routes tests', function() {
 
+      console.log(env_ex);
     it('GET to / should return 200', function(done){
         chai.request(reqServer)
         .get('/')

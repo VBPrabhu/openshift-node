@@ -222,12 +222,11 @@ pre {
  
 
 
-<section class="ie-padding-top-redHeader">
+
+<section class="padding-top-redHeader">
     <div col-md-12 col-lg-12 col-xs-12 col-sm-12>
         <p>payment page: </p>
-         <iframe src="https://pay.sandbox.realexpayments.com/pay" ></iframe>
-            
-       
+             
         <form method="POST" action="https://pay.sandbox.realexpayments.com/pay">
             <input type="hidden" name="TIMESTAMP" value="20180713102740">
             <input type="hidden" name="MERCHANT_ID" value="generalichtest">
@@ -249,13 +248,16 @@ pre {
   
     </div>
     <script>
-         console.log("Main window script loaded:");
+         console.log("Main window script loaded");
          window.addEventListener('message', resHandler, false);
-            function resHandler(evt) {
-             console.log("EVT::" + evt);
-            }
+         function resHandler(evt) {
+             console.log("HPP_POST_DIMENSIONS::" + evt);
+         }
     </script>
 </section>
+
+
+
 
 
 

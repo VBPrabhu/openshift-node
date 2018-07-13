@@ -225,8 +225,8 @@ pre {
 <section class="ie-padding-top-redHeader">
     <div col-md-12 col-lg-12 col-xs-12 col-sm-12>
         <p>payment page: Card details</p>
-         <hpp:body />
-        
+         
+        <iframe src="https://pay.sandbox.realexpayments.com/pay">
         <form method="POST" action="https://pay.sandbox.realexpayments.com/pay">
             <input type="hidden" name="TIMESTAMP" value="20180713102740">
             <input type="hidden" name="MERCHANT_ID" value="generalichtest">
@@ -245,6 +245,7 @@ pre {
             <input type="hidden" name="SHA1HASH" value="c992310d301f395c1403f2d616fd6cd3d5c13fa7">
             <input type="submit" value="Click here to Purchase">
         </form>
+    </iframe>
     </div>
     <script>
          console.log("Main window script loaded:");
@@ -257,6 +258,8 @@ function receive(evt)
 }
     </script>
 </section>
+
+
 
 
 

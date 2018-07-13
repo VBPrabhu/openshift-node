@@ -246,7 +246,20 @@ pre {
             <input type="submit" value="Click here to Purchase">
         </form>
     </div>
+    <script>
+         console.log("Main window script loaded:");
+    
+        window.addEventListener('message', receive, false);
+
+function receive(evt)
+{
+ console.log("EVT::" + evt);
+}
+    </script>
 </section>
+
+
+
 
 
 
